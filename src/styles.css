@@ -18,12 +18,12 @@
   margin-top: 20px;
 }
 
-nav ul{
+nav ul {
   line-height: 50px;
   padding: 20px 0px;
   text-decoration: none;
 }
-nav li{
+nav li {
   display: inline;
   list-style: none;
   margin-left: 15px;
@@ -35,7 +35,7 @@ nav a {
   text-decoration: none;
 }
 nav a:hover {
-color: var(--branding-color);
+  color: var(--branding-color);
 }
 
 nav a:active {
@@ -45,7 +45,7 @@ nav a:active {
 
 .hero {
   text-align: center;
-  padding: 140px 20px;
+  padding: 120px 20px;
   background-color: #f2f2e6;
   margin: 0;
 }
@@ -54,14 +54,14 @@ nav a:active {
   font-size: 32px;
 }
 
-.hero p{
+.hero p {
   font-size: 36px;
   font-weight: bold;
   text-align: center;
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 92px;
   font-family: var(--heading-font-family);
   line-height: 1;
   text-align: center;
@@ -89,9 +89,10 @@ p {
   font-family: var(--default-font-family);
 }
 
-.content h3{
+.content h3 {
   font-size: 24px;
   font-family: var(--heading-font-family);
+  margin-top: 10px;
 }
 
 .content p {
@@ -125,11 +126,11 @@ p {
 }
 
 .btn-branding:hover {
-    color: black;
+  color: black;
 }
 .btn-branding-outline {
   border: solid 1.5px #513c00;
-  background-color: #F9F7FE;
+  background-color: #f9f7fe;
   color: var(--branding-color);
   font-family: var(--default-font-family);
   text-decoration: none;
@@ -137,6 +138,7 @@ p {
   border-radius: 5px;
   font-weight: 600;
   font-size: 18px;
+  margin: 0 auto;
 }
 
 .btn-branding-outline:hover {
@@ -145,23 +147,46 @@ p {
 }
 
 .content-container {
-padding: 40px 20px;
-text-align: center;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .content-container {
     padding: 80px 20px;
   }
 
+   {
+    font-size: 26px;
+  }
+  h1 {
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+
+  .img-thumbnail {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .btn-branding-outline {
+    margin: 0 auto;
+  }
   .project_description {
     text-align: center;
+    font-size: 22px;
     padding: 0;
   }
 }
 
 .selfie {
   width: 100%;
+}
+
+.img-thumbnail {
+  box-shadow: 12px 11px 1px rgba(18, 18, 1, 0.2);
+  margin-right: 20px;
 }
 
 .feature {
@@ -176,7 +201,7 @@ text-align: center;
   font-weight: 500;
   margin-top: 34px;
   border: 2px solid var(--branding-color);
-  border-style:ridge;
+  border-style: ridge;
   text-align: left;
   border-radius: 10px;
   padding: 10px 30px;
@@ -211,13 +236,9 @@ footer .social-links a:hover {
 
 footer .email-link {
   font-size: 20px;
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
 
 footer .email-link:hover {
   color: black;
-}
-
-.contact-footer container {
-  
 }
