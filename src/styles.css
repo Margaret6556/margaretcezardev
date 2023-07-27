@@ -12,9 +12,9 @@
   justify-self: center;
   margin-top: 20px;
 }
+
 .sclogosmall {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 18%;
   margin-top: 20px;
 }
 
@@ -74,6 +74,10 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 36px;
+}
+
 p {
   font-size: 18px;
   margin-top: 10px;
@@ -81,7 +85,7 @@ p {
 
 .content h1 {
   font-size: 64px;
-  padding: 0px;
+  padding: 20px;
 }
 
 .content h2 {
@@ -103,7 +107,7 @@ p {
   font-family: var(--default-font-family);
   font-size: 16px;
   opacity: 0.5;
-  padding: 2px 4px;
+  margin: 0 15px;
 }
 
 .project_description h2 {
@@ -113,6 +117,8 @@ p {
 }
 
 .btn-branding {
+  display: flex;
+  align-items: center;
   background-color: var(--branding-color);
   font-family: var(--default-font-family);
   color: var(--btn-text-color);
@@ -121,7 +127,7 @@ p {
   text-decoration: none;
   line-height: 27px;
   padding: 15px 30px;
-  margin-top: 30px;
+  margin-top: 40px;
   font-weight: 600;
 }
 
@@ -138,12 +144,12 @@ p {
   border-radius: 5px;
   font-weight: 600;
   font-size: 18px;
+  color: gray;
   margin: 0 auto;
 }
 
 .btn-branding-outline:hover {
   background-color: var(--branding-color);
-  color: white;
 }
 
 .content-container {
@@ -151,12 +157,20 @@ p {
   text-align: center;
 }
 
+.col-md-6 .img-thumbnail {
+  margin: 30px 10px 20px 10px;
+}
+
+.content .col-md-6 {
+  vertical-align: baseline;
+}
+
 @media (max-width: 800px) {
   .content-container {
     padding: 80px 20px;
   }
 
-   {
+  p {
     font-size: 26px;
   }
   h1 {
@@ -167,12 +181,10 @@ p {
   }
 
   .img-thumbnail {
-    width: 80%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 10px 10px 20px 20px;
   }
-  .btn-branding-outline {
-    margin: 0 auto;
-  }
+
   .project_description {
     text-align: center;
     font-size: 22px;
@@ -186,14 +198,14 @@ p {
 
 .img-thumbnail {
   box-shadow: 12px 11px 1px rgba(18, 18, 1, 0.2);
-  margin-right: 20px;
+  margin: 10px 30px;
 }
 
 .feature {
   text-align: center;
   color: black;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 40px;
 }
 
