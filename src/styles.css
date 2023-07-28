@@ -171,17 +171,18 @@ p {
 
 .keywordsearch {
   background-color: var(--branding-color);
-  border: 2px solid black;
-  border-radius: 40px;
-  width: 40%;
-  padding: 20px;
+  border-radius: 100%;
+  width: 100%;
 }
 
 .searchbar {
-  width: 40%;
+  max-width: 100%;
   padding: 20px;
   font-size: 20px;
   margin: 0 auto;
+  border: 2px solid black;
+
+  padding: 20px;
 }
 .card-body1 {
   display: flex;
