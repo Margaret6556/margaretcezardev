@@ -61,10 +61,11 @@ nav a:active {
 }
 
 h1 {
-  font-size: 92px;
+  font-size: 64px;
   font-family: var(--heading-font-family);
   line-height: 1;
   text-align: center;
+  margin-top: 10px;
 }
 
 h2 {
@@ -131,18 +132,18 @@ p {
 
 .btn-branding:hover {
   color: black;
+  border: solid 1.5px #513c00;
 }
 .btn-branding-outline {
   border: solid 1.5px #513c00;
   background-color: #f9f7fe;
-  color: var(--branding-color);
+  color: var(--btn-text-color);
   font-family: var(--default-font-family);
   text-decoration: none;
   padding: 15px 30px;
   border-radius: 5px;
   font-weight: 600;
   font-size: 18px;
-  color: gray;
   margin: 0 auto;
 }
 
@@ -155,12 +156,37 @@ p {
   text-align: center;
 }
 
+.content-container-blogs {
+  width: 100%;
+  margin: 10px 5px;
+}
+
 .col-md-6 .img-thumbnail {
   margin: 30px 10px 20px 10px;
 }
 
 .content .col-md-6 {
   vertical-align: baseline;
+}
+
+.keywordsearch {
+  background-color: var(--branding-color);
+  border: 2px solid black;
+  border-radius: 40px;
+  width: 40%;
+  padding: 20px;
+}
+
+.searchbar {
+  width: 40%;
+  padding: 20px;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.card-body1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 800px) {
