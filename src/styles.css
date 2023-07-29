@@ -171,19 +171,43 @@ p {
 
 .keywordsearch {
   background-color: var(--branding-color);
-  border-radius: 100%;
-  width: 100%;
-}
-
-.searchbar {
-  max-width: 100%;
-  padding: 20px;
-  font-size: 20px;
-  margin: 0 auto;
   border: 2px solid black;
-
-  padding: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  width: 60%;
 }
+
+.search-bar {
+  width: 100%;
+  background-color: var(--branding-color);
+  position: relative;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  color: black;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.search-bar button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.search-bar button i {
+  font-size: 20px;
+  color: black;
+}
+
 .card-body1 {
   display: flex;
   flex-direction: row;
@@ -218,7 +242,7 @@ p {
 }
 
 .selfie {
-  width: 100%;
+  width: 80%;
 }
 
 .img-thumbnail {
@@ -279,3 +303,35 @@ footer .email-link {
 footer .email-link:hover {
   color: black;
 }
+
+/*animation start*/
+
+.search-bar {
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.search-bar input[type="text"] {
+  transition: background-color 0.1s ease-in-out;
+}
+
+.search-bar button {
+  transition: right 0.3s ease-in-out;
+}
+
+.search-bar:hover,
+.search-bar:focus-within {
+  width: 70%;
+  background-color: lightyellow;
+}
+
+.search-bar input[type="text"]:focus,
+.search-bar input[type="text"]:hover {
+  background-color: white;
+}
+
+.search-bar:hover button,
+.search-bar:focus-within button {
+  right: 15px;
+}
+
+/*animation end*/
