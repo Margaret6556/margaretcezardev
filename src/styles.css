@@ -126,7 +126,7 @@ p {
   text-decoration: none;
   line-height: 27px;
   padding: 15px 30px;
-  margin-top: 40px;
+  margin-top: 30px;
   font-weight: 600;
 }
 
@@ -208,10 +208,42 @@ p {
   color: black;
 }
 
-.card-body1 {
+/*card-start*/
+
+.content-container-blogs {
+  background-color: var(--primary-color);
+  padding: 20px 20px;
+  border-radius: 20px;
+  border: 1px solid black;
+  width: auto;
+}
+
+.container-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
+  height: auto;
+  background-color: var(--primary-color);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  max-height: 300px;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 15px 15px;
+}
+
+.card-body2 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 10px;
+}
+.card-text {
+  text-align: left;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 800px) {
@@ -316,17 +348,6 @@ footer .email-link:hover {
 
 .search-bar button {
   transition: right 0.3s ease-in-out;
-}
-
-.search-bar:hover,
-.search-bar:focus-within {
-  width: 70%;
-  background-color: lightyellow;
-}
-
-.search-bar input[type="text"]:focus,
-.search-bar input[type="text"]:hover {
-  background-color: white;
 }
 
 .search-bar:hover button,
