@@ -28,6 +28,7 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+     <script src="./src/main.js"></script>
   </head>
   <body>
 
@@ -58,16 +59,17 @@
     <form class="mt-0">
       <div class="mb-3 ">
         <label for="exampleInputEmail1" class="form-label mt-5">Email address:</label>
-        <input type="email" class="form-control" id="email input" >
-        <div id="emailHelp" class="text-muted">We'll never share your email with anyone else.</div>
+        <input type="email" class="form-control" id="email_input" >
+        <div id="email" class="text-muted">We'll never share your email with anyone else.</div>
       </div>
+
       <div class="mb-3">
         <label for="message" > Your message: </label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <input type="message" class="form-control" id="message_input">
       </div>
       <div class="mb-3">         
       </div>
-      <button type="submit" class="btn btn-branding" >Send</button>
+      <button type="button" class="btn btn-branding" onclick="submitForm()" >Send</button>
     </form>
     </div>
   </div>
